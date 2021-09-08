@@ -1,0 +1,27 @@
+version: 0.2
+
+proxy:
+  upload-artifacts: yes
+  logs: yes
+  
+phases:
+  install:
+    runtime-version: 
+      node.js: 12
+      python: 3.8
+  
+  pre_build: 
+    commands:
+      - env
+      - mkdir test
+      - cd test
+      - echo "TESTING"
+     
+  build:
+    commands:
+      - touch test.txt
+      - ls
+      
+  post_build: 
+    commands: 
+      - echo "build completed on 'date'"
