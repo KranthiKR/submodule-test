@@ -19,8 +19,9 @@ phases:
      
   build:
     commands:
-      - touch test.txt
-      - ls
+      - ls -la
+      - git submodule init
+      - git submodule update --recursive
       
   post_build: 
     commands: 
