@@ -21,7 +21,6 @@ phases:
     commands:
       - ls -la
       - git submodule init
-      - git submodule update --recursive
       - echo FILE_PATH
       
   post_build: 
