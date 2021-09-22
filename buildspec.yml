@@ -21,7 +21,7 @@ phases:
     commands:
       - ls -la
       - git submodule init
-      - echo FILE_PATH
+      - echo $FILE_PATH
       
   post_build: 
     commands: 
