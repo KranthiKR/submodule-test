@@ -21,7 +21,7 @@ phases:
     commands:
       - ls -la
       - git submodule init
-      - echo $FILE_PATH
+      - echo $CODEBUILD_WEBHOOK_TRIGGER
       
   post_build: 
     commands: 
