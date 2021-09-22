@@ -21,9 +21,7 @@ phases:
     commands:
       - ls -la
       - git submodule init
-      - echo $CODEBUILD_WEBHOOK_TRIGGER
-      - export BRANCH=$(awk -F / '{print $2}' <<< $CODEBUILD_WEBHOOK_TRIGGER)
-      - echo $BRANCH
+      - echo $CODEBUILD_SOURCE_VERSION
       
   post_build: 
     commands: 
