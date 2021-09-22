@@ -28,4 +28,4 @@ phases:
   post_build: 
     commands: 
       - echo "build completed on 'date'"
-      - git show --stat --oneline HEAD
+      - git log --name-only
