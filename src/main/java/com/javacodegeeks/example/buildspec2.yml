@@ -5,7 +5,6 @@ phases:
     commands:
       - echo "[+] Scanning for security vulnerability within dependencies"
       # - pipenv check (if pipenv is installed and a Pipfile is in place)
-      # - Alternatively: https://www.owasp.org/index.php/OWASP_Dependency_Check
   pre_build:
     commands:
       - pip install pytest requests
